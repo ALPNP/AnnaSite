@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Основные стилия для десктопного браузера*/
+
+body{
+    background: #C0E4E2;
+    background-image: url(images/background_page.jpg);
+    #background-position: top;
+    display: block;
+    background-size: auto 400px;
+    background-attachment: scroll;
+    
+}
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.logo {
+   box-shadow: 0 0px 10px 6px #f1c3c4;
+    display: block;
+    #position: absolute;
+    height: 328px;
+   
+}
+    
+li a {
+    background-image:url(images/bg.jpg);
+}
+
+#navigation,#navigation li {
+  #margin: 5px;
+  padding: 5px;
+}
+
+#navigation {
+  width: 950px;
+  text-align: center; /* пункты и текст горизонтально по центру */
+  background: rgba(248, 192, 193, 0.9);
+  box-shadow: 0 0 10px 6px #FCEFEF;
+  margin-top: 20px;
+}
+
+#navigation li {
+  display: inline-block;
+  #width:100px;
+}
+
+#navigation a {
+  display: inline-block;
+  padding: 5px 15px;
+  color: #FFFAFC;
+  text-decoration: none;
+  border: 5px double;
+  #background: #F8C0C1;
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  border-radius: 30px;
+  background-image:url(images/bg.jpg) repeat -25px 35px;
+}
+
+#navigation a:hover {
+  #background: #B06675;
+  background-position: -150px 0;
+}
+
+#content {
+   width: 960px;
+   #margin: auto;
+   margin-top: 20px;
+   background-color: #ffffff;
+   padding: 3px 0px;
+   text-align: center;
+   font-family: 'Lobster', cursive;
+   font-size: 23px;
+   #border-radius: 30px;
+   box-shadow: 0 0 10px 6px #f1c3c4;
+   #box-shadow: inset 0 0 5px 2px #F1C3C4;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+#textincontent {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.wordForVisitor {
+    font-family: Times , sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    text-indent: 20px;
+}
+
+.social {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;  
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Monte-Carlo;
+    display: inline-block;
+    width: 48px; 
+    height: 48px;
+    background:url(images/insta2.png) no-repeat 0 0;
+}
+
+.social:hover{
+    #box-shadow: 0px 0px 5px 5px #446E93;
+    border-radius: 7px;
+    #border: 1px solid #C0E4E2;
+    background-position: 0 -60px;
+}
+
+.social:active {
+    background-position: 0 -120px;
+}
+
+.social img {
+    visibility: hidden;
+}
+
+@font-face{
+    font-family: Monte-Carlo;
+    src: url(font/monte.ttf);
+}
+
+@font-face{
+    font-family: Times;
+    src: url(font/timesbd.ttf);
+}
