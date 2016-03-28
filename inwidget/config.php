@@ -6,12 +6,12 @@
 $CONFIG = array(
 
 	// Instagram login
-	'LOGIN' => 'beauty__stylist_',
+	'LOGIN' => '',
 
 	// ACCESS TOKEN granted to you by some Instagram app.
 	// Follow this link: http://inwidget.ru/getAccessToken.php
 	// to get your own ACCESS TOKEN by inWidget app.
-	'ACCESS_TOKEN' => '3015702807.a7f6f15.5f62455e80534752a517bbc43d88a13a',
+	'ACCESS_TOKEN' => '',
 
 	// Get pictures from WORLDWIDE by tag name. 
 	// Use this options only if you want show pictures of other users. 
