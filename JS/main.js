@@ -12,10 +12,15 @@ function Widget() {
     div.style.backgroundRepeat = 'no-repeat';
     div.style.transition = 'all .4s ease-in-out';
     div.style.backgroundSize = '960px 320px'
+    div.style.marginTop = '10px';
+    div.style.boxShadow = '0 0 10px 6px #FCEFEF';
         
     
-    document.body.appendChild(div); // Разместили его в нашем документе
-    
+//    document.body.appendChild(div); // Разместили его в нашем документе
+    var tar = document.body.children[0],
+        tarDown = tar.children[2];
+//    console.log(tarDown);
+        tarDown.parentElement.insertBefore(div, tarDown);
     };
     
     function buildCopyWright(){
@@ -38,7 +43,7 @@ function Widget() {
     aElem.style.textDecoration= 'none';
     aElem.style.color = "rgb(255, 255, 255)";
     aElem.style.fontFamily = "Georgia, 'Times New Roman', Times, serif";
-    aElem.style.transition= 'all .4s ease-in-out';
+    aElem.style.transition= 'all .1s ease-in-out';
     
         
         div.appendChild(aElem);
@@ -50,7 +55,7 @@ function Widget() {
     div.onmouseover = function(event) {
         
         var target = event.target;
-            console.log(target);
+//            console.log(target);
         if (target.className == 'linkUp') {
             aElem.style.background = 'rgba(233, 189, 190, 1)';
 //            aElem.style.border = '15px dashed black';
@@ -74,15 +79,18 @@ function Widget() {
         div.style.backgroundImage = "url(" + i + ".jpg)";
         return int1 = setInterval(function(){
             i++;
-            if (i === 6){ //
+            if (i === 4){ //
                 i = 1;
             };
             
             div.style.backgroundImage = "url(" + i + ".jpg)";
+//            console.log(i);
         }, value);
     };
     
-    interval1(4000, 1); //Параметры запуска слайдера;
+    document.addEventListener('DOMContentLoaded', function(event){
+        return interval1(6000, 1); //Параметры запуска слайдера;    
+    });
 };
 
-var widget = new Widget();
+var slider = new Widget();
