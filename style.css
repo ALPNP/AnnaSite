@@ -150,6 +150,40 @@ hr {
     text-align: left;
     padding: 10px;
     text-indent: 20px;
+    transition: all .1s ease-in-out;
+}
+.wordForVisitor a {
+    background-color: #f1c3c4;
+/*    font-size: 30px;*/
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 0 0 3px 2px #f1c3c4;
+}
+.wordForVisitor b {
+    background: #C0E4E2;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 800px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    line-height: normal;
+    display: inline-block;
+/*    background-color: #C0E4E2;*/
+} 
+.wordForVisitor a:hover {
+    background-color:#EE4536;
+/*    transition: all .1s ease-in-out;*/
+/*    text-decoration: none;*/
+    box-shadow: 0 0 3px 2px #EE4536;
+    color: white;
 }
 
 .social {

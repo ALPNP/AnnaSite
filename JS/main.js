@@ -26,7 +26,7 @@ function Widget() {
     function buildCopyWright(){
         
     this.aElem = document.createElement('a');
-        aElem.innerHTML = "Хотите быть самой красивой<br> в свой выпуской ?<br>Записаться и узнать стоимость, <br> вы можете по телефону ниже: <br>+7 (926) 511-11-01 (Анна)<br>";
+        aElem.innerHTML = "Хотите быть самой красивой<br> в свой выпуской ?<br>Записаться и узнать стоимость, <br> вы можете по телефону ниже: <br>+7 (926) 542-11-31 (Анна)<br>";
         aElem.setAttribute('href', '#');
         aElem.className = 'linkUp';
     
